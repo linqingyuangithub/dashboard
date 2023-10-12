@@ -22,9 +22,7 @@ st.title('I love cats :blue[cool] :sunglasses:')
 # In[3]:
 
 
-#style = pd.read_csv('./Downloads/py/style master.csv', low_memory=False)
-combined_df = pd.read_csv('./OneDrive - Delta Enterprise Corp/combined inv/combined_df.csv', dtype={"Date": str})
-combined_df
+
 
 
 # In[ ]:
