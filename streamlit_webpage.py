@@ -9,18 +9,20 @@ import numpy as np
 import streamlit as st
 
 
-st.title('Have a good day')
+st.title('Daily Reporting')
 st.title('I love cats :blue[cool] :sunglasses:')
 
 uploaded_file = st.file_uploader(
-    "Choose your database", accept_multiple_files=False)
+    "Choose sales data", accept_multiple_files=False)
 if uploaded_file is not None:
-    file_name = uploaded_file
+    df = pd.read_excel(uploaded_file)
+    st.dataframe(df)
+    st.table(df)
 else:
     file_name = "DatabaseSample.xlsx"
 
-style = pd.read_excel(uploaded_file)
-style
+#style = pd.read_excel(uploaded_file)
+#style
 # In[3]:
 
 
